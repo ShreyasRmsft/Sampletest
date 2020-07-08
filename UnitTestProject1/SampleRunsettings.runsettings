@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>  
+    <Parameter name="connectionString" value="sampleString" />
+    <Parameter name="param1" value="Param1Value"/>
+    <Parameter name="param2" value="Param2Value"/>
+  </TestRunParameters>
+</RunSettings>

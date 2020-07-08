@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="orderedtest1" storage="d:\dta_testing\unittestproject1\codeduitestproject3\codeduitestproject3\orderedtest1.orderedtest" id="4bf4706f-37ea-4ef8-97e0-765ef6872829" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="894a9958-dc94-b396-027d-40c5af9617b8" name="CodedUITest111" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="2f98b33c-36ab-1fab-c1a9-2df74350d273" name="CodedUITest112" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="a246d2c1-40fc-f9bf-e19b-fb1e0a87ae2d" name="CodedUITest113" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="c05daa20-ea91-8321-f1d7-8bfa93f86da2" name="CodedUITest114" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="65dd2006-94f2-7801-d660-a182af66bf65" name="CodedUITest115" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="df4da287-2f2e-a2f9-2d3a-48863edbcf6c" name="CodedUITest116" storage="bin\release\orderedproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

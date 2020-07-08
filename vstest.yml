@@ -1,0 +1,19 @@
+phases:
+
+################################################################################
+- phase: VsTest
+################################################################################
+  displayName: VsTest
+  queue:
+    parallel: 2
+  steps:
+
+  # Clean
+  - checkout: self
+    clean: true
+
+  # Use VsTest
+  - task: VsTest@2
+    displayName: VsTest
+    inputs:
+      searchFolder: "D:\\TestBed\\MassiveMixTests"

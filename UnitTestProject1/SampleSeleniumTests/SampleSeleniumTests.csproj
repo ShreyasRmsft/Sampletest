@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Module.props))\Module.props" /> -->
+  <PropertyGroup>
+      <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{268A5FBA-5AF9-4025-8B97-10F0B71142DB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SampleSeleniumTests</RootNamespace>
+    <AssemblyName>SampleSeleniumTests</AssemblyName>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <NonShipping>true</NonShipping>
+    <SignAssembly>false</SignAssembly>
+    <SigningKey>TestCode</SigningKey>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>14.0</OldToolsVersion>
+  </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <NugetReference Include="Mseng.VisualStudio.QualityTools">
+      <ArtifactPath>lib\net35\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</ArtifactPath>
+    </NugetReference>
+    <NugetReference Include="NUnit">
+      <ArtifactPath>lib\nunit.framework.dll</ArtifactPath>
+    </NugetReference>
+    <NugetReference Include="NUnitTestAdapter">
+      <ArtifactPath>lib\nunit.core.dll</ArtifactPath>
+      <ArtifactPath>lib\nunit.core.interfaces.dll</ArtifactPath>
+      <ArtifactPath>lib\nunit.util.dll</ArtifactPath>
+      <ArtifactPath>lib\NUnit.VisualStudio.TestAdapter.dll</ArtifactPath>
+    </NugetReference>
+    <NugetReference Include="Selenium.WebDriver">
+      <ArtifactPath>lib\net40\WebDriver.dll</ArtifactPath>
+    </NugetReference>
+    <NugetReference Include="Selenium.Support">
+      <ArtifactPath>lib\net40\WebDriver.Support.dll</ArtifactPath>
+    </NugetReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MultipleBrowsersTest.cs" />
+    <Compile Include="DataDrivenTest.cs" />
+    <Compile Include="NUnitTest.cs" />
+    <Compile Include="SeleniumTestBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="browsers.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- <Import Project="$(ModulePath)\Module.targets" /> -->
+</Project>
